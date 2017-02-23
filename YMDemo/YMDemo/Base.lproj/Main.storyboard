@@ -28,7 +28,7 @@
                                 <color key="backgroundColor" red="0.99581065189999995" green="1" blue="0.34000108569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="微信登录"/>
                                 <connections>
-                                    <action selector="wxLogBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uXM-Iw-BHi"/>
+                                    <action selector="wxLogBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LSf-r5-7oo"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Imh-4L-Sec">
@@ -43,8 +43,7 @@
                                 <color key="backgroundColor" red="0.99581065189999995" green="1" blue="0.34000108569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="微信分享"/>
                                 <connections>
-                                    <action selector="wxLogBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Cc-Ax-aJq"/>
-                                    <action selector="wxShareBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kvl-7O-4Jn"/>
+                                    <action selector="wxShareBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nDI-Tw-52G"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -63,7 +62,7 @@
                     <connections>
                         <outlet property="userIconImageView" destination="kL3-k6-fZu" id="QHh-nh-DVC"/>
                         <outlet property="userNameLabel" destination="Imh-4L-Sec" id="4l2-w8-TK3"/>
-                        <outlet property="wxLogBtn" destination="hvz-FZ-BrP" id="SHN-yi-43X"/>
+                        <outlet property="wxLogBtn" destination="hvz-FZ-BrP" id="wdY-gn-jhk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

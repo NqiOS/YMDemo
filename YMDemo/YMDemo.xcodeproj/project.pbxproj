@@ -53,6 +53,7 @@
 		0AF876671E5ECF59009F7E9B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0AF876631E5ECF59009F7E9B /* LICENSE */; };
 		0AF876681E5ECF59009F7E9B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF876651E5ECF59009F7E9B /* MBProgressHUD.m */; };
 		0AF876691E5ECF59009F7E9B /* README.mdown in Sources */ = {isa = PBXBuildFile; fileRef = 0AF876661E5ECF59009F7E9B /* README.mdown */; };
+		0AF8766C1E5EE7E4009F7E9B /* YMTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8766B1E5EE7E4009F7E9B /* YMTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +141,8 @@
 		0AF876641E5ECF59009F7E9B /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		0AF876651E5ECF59009F7E9B /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		0AF876661E5ECF59009F7E9B /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
+		0AF8766A1E5EE7E4009F7E9B /* YMTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMTool.h; sourceTree = "<group>"; };
+		0AF8766B1E5EE7E4009F7E9B /* YMTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +201,8 @@
 				0AF875D81E5EBCCB009F7E9B /* AppDelegate.m */,
 				0AF876331E5EC7C4009F7E9B /* NQMainViewController.h */,
 				0AF876341E5EC7C4009F7E9B /* NQMainViewController.m */,
+				0AF8766A1E5EE7E4009F7E9B /* YMTool.h */,
+				0AF8766B1E5EE7E4009F7E9B /* YMTool.m */,
 				0AF875DD1E5EBCCB009F7E9B /* Main.storyboard */,
 				0AF875E01E5EBCCB009F7E9B /* Assets.xcassets */,
 				0AF875E21E5EBCCB009F7E9B /* LaunchScreen.storyboard */,
@@ -454,6 +459,7 @@
 				0AF876561E5ECD6C009F7E9B /* SDWebImageCompat.m in Sources */,
 				0AF875D91E5EBCCB009F7E9B /* AppDelegate.m in Sources */,
 				0AF876541E5ECD6C009F7E9B /* NSData+ImageContentType.m in Sources */,
+				0AF8766C1E5EE7E4009F7E9B /* YMTool.m in Sources */,
 				0AF876591E5ECD6C009F7E9B /* SDWebImageDownloaderOperation.m in Sources */,
 				0AF876601E5ECD6C009F7E9B /* UIImageView+WebCache.m in Sources */,
 				0AF8765A1E5ECD6C009F7E9B /* SDWebImageManager.m in Sources */,
