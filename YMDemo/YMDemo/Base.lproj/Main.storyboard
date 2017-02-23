@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="NQMainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,58 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kL3-k6-fZu">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="hud-q0-0o2"/>
+                                    <constraint firstAttribute="height" constant="100" id="zeG-Oi-gS3"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvz-FZ-BrP">
+                                <color key="backgroundColor" red="0.99581065189999995" green="1" blue="0.34000108569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="微信登录"/>
+                                <connections>
+                                    <action selector="wxLogBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uXM-Iw-BHi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Imh-4L-Sec">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="hOd-NU-GMg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocT-q4-ZBD">
+                                <color key="backgroundColor" red="0.99581065189999995" green="1" blue="0.34000108569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="微信分享"/>
+                                <connections>
+                                    <action selector="wxLogBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Cc-Ax-aJq"/>
+                                    <action selector="wxShareBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kvl-7O-4Jn"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kL3-k6-fZu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="61v-4z-flL"/>
+                            <constraint firstItem="ocT-q4-ZBD" firstAttribute="top" secondItem="hvz-FZ-BrP" secondAttribute="bottom" constant="20" id="AmP-nC-5Jf"/>
+                            <constraint firstItem="kL3-k6-fZu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="Jy2-Np-CYh"/>
+                            <constraint firstItem="hvz-FZ-BrP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O6K-N4-1p0"/>
+                            <constraint firstItem="Imh-4L-Sec" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UOr-Ku-6Yu"/>
+                            <constraint firstItem="hvz-FZ-BrP" firstAttribute="top" secondItem="Imh-4L-Sec" secondAttribute="bottom" constant="40" id="cxT-t0-97n"/>
+                            <constraint firstItem="Imh-4L-Sec" firstAttribute="top" secondItem="kL3-k6-fZu" secondAttribute="bottom" constant="10" id="ibZ-xm-ZSW"/>
+                            <constraint firstItem="ocT-q4-ZBD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mOc-yf-l2s"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userIconImageView" destination="kL3-k6-fZu" id="QHh-nh-DVC"/>
+                        <outlet property="userNameLabel" destination="Imh-4L-Sec" id="4l2-w8-TK3"/>
+                        <outlet property="wxLogBtn" destination="hvz-FZ-BrP" id="SHN-yi-43X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="15" y="32"/>
         </scene>
     </scenes>
 </document>
