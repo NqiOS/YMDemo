@@ -10,6 +10,6 @@
 #define NQ_pch
 
 #import <UMSocialCore/UMSocialCore.h>
-#define USHARE_DEMO_APPKEY  @"58ae8e81f43e48614d000d59"
-
+#define UM_Appkey  @"58ae8e81f43e48614d000d59"
+#define UM_App Master Secret  @"58ae8e81f43e48614d000d59"
 #endif /* NQ_pch */

@@ -12,7 +12,6 @@
 
 @interface YMTool : NSObject
 + (instancetype)sharedYMTool;
-
 //授权微信登录并获取用户信息
 - (void)ym_wxLoginResult:(void(^)(UMSocialUserInfoResponse *resp))loginResult;
 //微信分享

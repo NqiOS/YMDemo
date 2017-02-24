@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A265E601E5FD6D3003DCBE2 /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A265E5F1E5FD6D3003DCBE2 /* UMMobClick.framework */; };
+		0A265E661E600746003DCBE2 /* libUMessage_Sdk_1.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A265E641E600746003DCBE2 /* libUMessage_Sdk_1.4.0.a */; };
+		0A265E681E600799003DCBE2 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A265E671E600799003DCBE2 /* UserNotifications.framework */; };
 		0AF875D61E5EBCCB009F7E9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF875D51E5EBCCB009F7E9B /* main.m */; };
 		0AF875D91E5EBCCB009F7E9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF875D81E5EBCCB009F7E9B /* AppDelegate.m */; };
 		0AF875DF1E5EBCCB009F7E9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF875DD1E5EBCCB009F7E9B /* Main.storyboard */; };
@@ -57,6 +60,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A265E5F1E5FD6D3003DCBE2 /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
+		0A265E641E600746003DCBE2 /* libUMessage_Sdk_1.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMessage_Sdk_1.4.0.a; sourceTree = "<group>"; };
+		0A265E651E600746003DCBE2 /* UMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMessage.h; sourceTree = "<group>"; };
+		0A265E671E600799003DCBE2 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		0A265E691E6007C5003DCBE2 /* YMDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YMDemo.entitlements; sourceTree = "<group>"; };
 		0AF875D11E5EBCCA009F7E9B /* YMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF875D51E5EBCCB009F7E9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0AF875D71E5EBCCB009F7E9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -150,6 +158,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A265E681E600799003DCBE2 /* UserNotifications.framework in Frameworks */,
+				0A265E601E5FD6D3003DCBE2 /* UMMobClick.framework in Frameworks */,
 				0AF876321E5EC4F2009F7E9B /* ImageIO.framework in Frameworks */,
 				0AF8762F1E5EC0ED009F7E9B /* libz.tbd in Frameworks */,
 				0AF8762D1E5EC0DE009F7E9B /* libc++.tbd in Frameworks */,
@@ -157,6 +167,7 @@
 				0AF876291E5EC0B9009F7E9B /* SystemConfiguration.framework in Frameworks */,
 				0AF876251E5EC065009F7E9B /* libsqlite3.tbd in Frameworks */,
 				0AF876271E5EC073009F7E9B /* CoreGraphics.framework in Frameworks */,
+				0A265E661E600746003DCBE2 /* libUMessage_Sdk_1.4.0.a in Frameworks */,
 				0AF8761E1E5EBE27009F7E9B /* UMSocialCore.framework in Frameworks */,
 				0AF876131E5EBE27009F7E9B /* libSocialQQ.a in Frameworks */,
 				0AF876191E5EBE27009F7E9B /* libSocialWeChat.a in Frameworks */,
@@ -173,6 +184,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A265E631E600746003DCBE2 /* UMessage_Sdk_1.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				0A265E641E600746003DCBE2 /* libUMessage_Sdk_1.4.0.a */,
+				0A265E651E600746003DCBE2 /* UMessage.h */,
+			);
+			path = UMessage_Sdk_1.4.0;
+			sourceTree = "<group>";
+		};
 		0AF875C81E5EBCCA009F7E9B = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +213,9 @@
 		0AF875D31E5EBCCB009F7E9B /* YMDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0A265E691E6007C5003DCBE2 /* YMDemo.entitlements */,
+				0A265E631E600746003DCBE2 /* UMessage_Sdk_1.4.0 */,
+				0A265E5F1E5FD6D3003DCBE2 /* UMMobClick.framework */,
 				0AF876621E5ECF59009F7E9B /* MBProgressHUD */,
 				0AF876361E5ECD6C009F7E9B /* SDWebImage */,
 				0AF875EB1E5EBE27009F7E9B /* UMSocial */,
@@ -311,6 +334,7 @@
 		0AF876231E5EC065009F7E9B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A265E671E600799003DCBE2 /* UserNotifications.framework */,
 				0AF876311E5EC4F2009F7E9B /* ImageIO.framework */,
 				0AF8762E1E5EC0ED009F7E9B /* libz.tbd */,
 				0AF8762C1E5EC0DE009F7E9B /* libc++.tbd */,
@@ -402,6 +426,14 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = Z6Z544288F;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -585,12 +617,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = YMDemo/YMDemo.entitlements;
 				DEVELOPMENT_TEAM = Z6Z544288F;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/YMDemo/UMSocial/SocialLibraries/QQ",
 					"$(PROJECT_DIR)/YMDemo/UMSocial/UMSocialSDK",
 					"$(PROJECT_DIR)/YMDemo/UMSocial/UMSocialUI",
+					"$(PROJECT_DIR)/YMDemo",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = YMDemo/NQ.pch;
@@ -603,9 +637,10 @@
 					"$(PROJECT_DIR)/YMDemo/UMSocial/SocialLibraries/Sina",
 					"$(PROJECT_DIR)/YMDemo/UMSocial/SocialLibraries/WeChat",
 					"$(PROJECT_DIR)/YMDemo/UMSocial/UMSocialSDK",
+					"$(PROJECT_DIR)/YMDemo/UMessage_Sdk_1.4.0",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = UShareDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pangge.tz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -614,12 +649,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = YMDemo/YMDemo.entitlements;
 				DEVELOPMENT_TEAM = Z6Z544288F;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/YMDemo/UMSocial/SocialLibraries/QQ",
 					"$(PROJECT_DIR)/YMDemo/UMSocial/UMSocialSDK",
 					"$(PROJECT_DIR)/YMDemo/UMSocial/UMSocialUI",
+					"$(PROJECT_DIR)/YMDemo",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = YMDemo/NQ.pch;
@@ -632,9 +669,10 @@
 					"$(PROJECT_DIR)/YMDemo/UMSocial/SocialLibraries/Sina",
 					"$(PROJECT_DIR)/YMDemo/UMSocial/SocialLibraries/WeChat",
 					"$(PROJECT_DIR)/YMDemo/UMSocial/UMSocialSDK",
+					"$(PROJECT_DIR)/YMDemo/UMessage_Sdk_1.4.0",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = UShareDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pangge.tz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -658,6 +696,7 @@
 				0AF875EA1E5EBCCB009F7E9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
