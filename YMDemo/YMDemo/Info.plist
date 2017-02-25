@@ -99,6 +99,8 @@
 		<string>mqzoneopensdkapi</string>
 		<string>mqqbrowser</string>
 		<string>mttbrowser</string>
+		<string>alipay</string>
+		<string>alipayshare</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
